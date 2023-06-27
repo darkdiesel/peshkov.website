@@ -1,7 +1,9 @@
-/vendor/
-node_modules/
+/vendor
+/node_modules
+
 npm-debug.log
 yarn-error.log
+
 
 # Laravel 4 specific
 bootstrap/compiled.php
@@ -17,7 +19,16 @@ public_html/hot
 
 storage/*.key
 .env
+.env.backup
 Homestead.yaml
 Homestead.json
-/.vagrant
+
+docker-compose.override.yml
+.vagrant
 .phpunit.result.cache
+
+# PHP Storm IDE
+/.idea
+
+# Visual Code IDE
+/.vscode

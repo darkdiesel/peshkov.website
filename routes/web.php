@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\AboutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get( '/', 'IndexController@index' )->name( 'home' );
+Route::get( '/', [IndexController::class, 'index'] )->name( 'home' );
 
-Route::get('/', function () {
-    return view('pages.index.index');
-});
+//Route::get('/', function () {
+//    return view('pages.index.index');
+//})->name( 'home' );
+
+Route::get( '/about/resume', [AboutController::class, 'index'])->name('about.index');

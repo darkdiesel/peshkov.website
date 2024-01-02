@@ -16,8 +16,8 @@ require('./bootstrap');
   window.h = 0;
 
   resizeWindow = function() {
-    window.w = canvas.width = window.innerWidth;
-    return window.h = canvas.height = window.innerHeight;
+    window.w = canvas.width = document.documentElement.clientWidth;
+    return window.h = canvas.height = document.documentElement.clientHeight;
   };
 
   window.addEventListener('resize', resizeWindow, false);

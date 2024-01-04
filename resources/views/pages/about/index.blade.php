@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', ' | Resume')
+@section('title', ' | About')
 
 @section('content')
     <div class="container">

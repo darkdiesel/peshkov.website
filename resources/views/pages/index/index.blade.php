@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('title', ' | Main')
+@section('title', ' | Home')
 
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-6">
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Contacts</h5>

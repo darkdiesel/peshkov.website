@@ -14,8 +14,9 @@ const mix = require('laravel-mix');
 require('laravel-mix-clean');
 
 mix.scripts([
+    // 'node_modules/bootstrap/dist/js/bootstrap.js',
     'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-    'resources/js/app.js'
+    'resources/js/background-confetti.js'
 ], 'public/js/main-footer.min.js');
 
 mix.scripts([

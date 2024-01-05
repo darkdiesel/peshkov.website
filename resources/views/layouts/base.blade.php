@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="auto">
 <head>
+    @include('partials.head_scripts')
     @include('partials.head_meta')
     @include('partials.head_title')
     @include('partials.head_fonts')
@@ -13,6 +14,6 @@
     @yield('page')
 </div>
 
-@include('partials.scripts')
+@include('partials.footer_scripts')
 </body>
 </html>

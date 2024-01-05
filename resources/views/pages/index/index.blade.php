@@ -16,7 +16,7 @@
                                 <h5 class="card-title">Igor Peshkov</h5>
                                 <p class="card-text">PHP web developer</p>
                                 <p class="card-text"><small class="text-body-secondary">WordPress, Drupal, Laravel, Yii2, CodeIgniter</small></p>
-                                <p class="card-text">Belarus, Grodno</p>
+                                <p class="card-text"><i class="fa-solid fa-location-dot"></i> Belarus, Grodno</p>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,14 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// bootstrap
+//@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
-// fontawesome
+// MDB
+//@import "../../node_modules/mdb-ui-kit/src/scss/mdb.free";
+//@import '~mdb-ui-kit/src/scss/mdb.free'; // Amazing! this path works!
+
+@import "~flag-icons/sass/flag-icons";
+
+// font awesome
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";

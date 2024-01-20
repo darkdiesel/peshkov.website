@@ -14,7 +14,7 @@
     </symbol>
 </svg>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom">
     <div class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
         <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,15 +28,51 @@
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#navbarMain"></button>
             </div>
             <div class="offcanvas-body p-4 pt-0 p-lg-0">
-                <ul class="navbar-nav flex-row flex-wrap">
+                <ul class="navbar-nav nav-underline flex-row flex-wrap">
                     <li class="nav-item col-12 col-lg-auto">
-                        <a class="nav-link " aria-current="page" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item col-12 col-lg-auto">
-                        <a href="{{ route('about.index') }}" class="nav-link">About Me</a>
+                        <a class="nav-link" aria-current="page" href="{{ route('browser_games.index') }}">Browser Games</a>
+                    </li>
+                    <li class="nav-item col-12 col-lg-auto">
+                        <a class="nav-link" aria-current="page" href="{{ route('about.index') }}">About Me</a>
+                    </li>
+                    <li class="nav-item col-12 col-lg-auto">
+                        <a class="nav-link active text-success" aria-current="page" target="_blank" href="http://diy.peshkov.website">DIY</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                    <li class="nav-item dropdown">
+                        <a
+                            data-bs-toggle="dropdown"
+                            data-bs-display="static"
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            aria-expanded="false"
+                        >
+                            <i class="fi fi-gb mt-0"></i>
+                        </a>
+
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fi fi-gb"></i> English
+                                    <i class="fa fa-check text-success ms-2"></i>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fi fi-ru"></i>
+                                    Русский
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
                         <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
                         <hr class="d-lg-none my-2 text-white-50">

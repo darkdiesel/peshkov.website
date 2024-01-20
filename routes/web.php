@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\BrowserGamesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +23,8 @@ Route::get( '/', [IndexController::class, 'index'] )->name( 'home' );
 //})->name( 'home' );
 
 Route::get( '/about/resume', [AboutController::class, 'index'])->name('about.index');
+
+
+Route::get( '/browser-games/list', [BrowserGamesController::class, 'index'])->name('browser_games.index');
+Route::get( '/browser-games/snake', [BrowserGamesController::class, 'snake'])->name('browser_games.snake');
+Route::get( '/browser-games/tetris', [BrowserGamesController::class, 'tetris'])->name('browser_games.tetris');

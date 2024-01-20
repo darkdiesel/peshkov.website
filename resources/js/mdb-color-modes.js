@@ -4,6 +4,10 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  */
 
+/**
+ * To using this add attribute data-mdb-theme="auto" to html tag
+ */
+
 (() => {
   'use strict'
 
@@ -21,9 +25,9 @@
 
   const setTheme = theme => {
     if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-bs-theme', 'dark')
+      document.documentElement.setAttribute('data-mdb-theme', 'dark')
     } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
+      document.documentElement.setAttribute('data-mdb-theme', theme)
     }
   }
 
@@ -38,10 +42,10 @@
 
     const themeSwitcherText = document.querySelector('#bd-theme-text')
     const activeThemeIcon = document.querySelector('.theme-icon-active use')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const btnToActive = document.querySelector(`[data-mdb-theme-value="${theme}"]`)
     const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
 
-    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+    document.querySelectorAll('[data-mdb-theme-value]').forEach(element => {
       element.classList.remove('active')
       element.setAttribute('aria-pressed', 'false')
     })
@@ -67,10 +71,10 @@
   window.addEventListener('DOMContentLoaded', () => {
     showActiveTheme(getPreferredTheme())
 
-    document.querySelectorAll('[data-bs-theme-value]')
+    document.querySelectorAll('[data-mdb-theme-value]')
       .forEach(toggle => {
         toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
+          const theme = toggle.getAttribute('data-mdb-theme-value')
           setStoredTheme(theme)
           setTheme(theme)
           showActiveTheme(theme, true)

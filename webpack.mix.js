@@ -13,15 +13,16 @@ const mix = require('laravel-mix');
 
 require('laravel-mix-clean');
 
-mix.scripts([
-    // 'node_modules/bootstrap/dist/js/bootstrap.js',
-    'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-    'resources/js/background-confetti.js'
-], 'public/js/main-footer.min.js');
+// mix.scripts([
+//     // 'node_modules/bootstrap/dist/js/bootstrap.js',
+//     'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+//     'resources/js/background-confetti.js'
+// ], 'public/js/main-footer.min.js');
 
-mix.scripts([
-    'resources/js/color-modes.js',
-], 'public/js/main-head.min.js');
+// mix.scripts([
+//     //'resources/js/bootstrap-color-modes.js',
+//     'resources/js/mdb-color-modes.js',
+// ], 'public/js/main-head.min.js');
 
 mix
     .sass('resources/sass/app.scss', 'public/css');
@@ -38,5 +39,10 @@ mix.clean({
 
 // adding version to files
 if (mix.inProduction()) {
+    mix.js('resources/js/main-head.js', 'public/js/main-head.min.js');
+    mix.js('resources/js/main-footer.js', 'public/js/main-footer.min.js');
     mix.version();
+} else {
+    mix.js('resources/js/main-head.js', 'public/js/main-head.min.js').sourceMaps();
+    mix.js('resources/js/main-footer.js', 'public/js/main-footer.min.js').sourceMaps();
 }

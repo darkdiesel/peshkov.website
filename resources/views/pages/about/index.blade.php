@@ -3,6 +3,23 @@
 @section('title', ' | About')
 
 @section('content')
+
+    <div class="container my-5">
+        <h1>About Me</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb px-3 py-1 bg-body-tertiary rounded-1 border">
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis" href="{{ route('home') }}">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    About Me
+                </li>
+            </ol>
+        </nav>
+    </div>
+
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6 col-lg-4">

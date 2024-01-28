@@ -24,6 +24,7 @@
         "@fortawesome/fontawesome-free": "^6.5.1",
         "bootstrap": "^5.3.0",
         "flag-icons": "^7.1.0",
+        "ipa-snake-js-game": "github:darkdiesel/ipa-snake-game-js#main",
         "mdb-ui-kit": "^7.1.0"
     }
 }

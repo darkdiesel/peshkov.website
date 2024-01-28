@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class="container my-5">
+    <div class="container mb-3">
         <h1>Browser Games</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb px-3 py-1 bg-body-tertiary rounded-1 border">
@@ -28,7 +28,9 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="/img/browser-games/snake.png" class="img-fluid rounded-start" alt="Snake Game">
+                                    <a href="{{ route('browser_games.snake') }}">
+                                        <img src="{{URL::asset('/img/browser-games/snake.png')}}" class="img-fluid rounded-start" alt="Snake Game">
+                                    </a>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -44,11 +46,13 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="/img/browser-games/tetris.png" class="img-fluid rounded-start" alt="Tetris Game">
+                                    <a href="{{ route('browser_games.tetris') }}">
+                                        <img src="{{URL::asset('/img/browser-games/tetris.png')}}" class="img-fluid rounded-start" alt="Tetris Game">
+                                    </a>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Tetris</h5>
+                                        <h5 class="card-title">Tetris <span class="badge text-bg-danger mb-3">Coming soon</span></h5>
                                         <p class="card-text">A puzzle video game created in 1985 by Alexey Pajitnov, a Soviet software engineer. This is my browser adaptation.</p>
                                         <a href="{{ route('browser_games.tetris') }}" class="btn btn-primary">Play</a>
                                     </div>

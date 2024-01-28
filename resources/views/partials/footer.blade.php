@@ -27,6 +27,9 @@
             <div class="col-md-4 justify-content-end list-unstyled d-flex">
                 <ul class="nav">
                     <li class="ms-3 nav-item">
+                        <a href="https://webmaster.yandex.ru/siteinfo/?site=peshkov.website"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?peshkov.website&theme=dark&lang=ru"/></a>
+                    </li>
+                    <li class="ms-3 nav-item">
                         <a class="text-body-secondary" href="https://github.com/darkdiesel" target="_blank">
                             <i class="fa-brands fa-square-github fa-xl"></i>
                         </a>

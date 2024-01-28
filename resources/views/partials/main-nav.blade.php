@@ -55,16 +55,17 @@
                         >
                             <i class="fi fi-gb mt-0"></i>
                         </a>
-
-
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    <i class="fi fi-gb"></i> English
+                                    <i class="fi fi-gb"></i>
+                                    English
                                     <i class="fa fa-check text-success ms-2"></i>
                                 </a>
                             </li>
-                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
                             <li>
                                 <a class="dropdown-item" href="#">
                                     <i class="fi fi-ru"></i>

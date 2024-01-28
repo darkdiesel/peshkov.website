@@ -1,8 +1,8 @@
 @extends('layouts.base')
 
-<canvas id="background"></canvas>
-
 @section('page')
+    <canvas id="background"></canvas>
+
     @include('partials.header')
 
     <main class="mt-6 mb-4 flex-shrink-0">
